@@ -1,5 +1,12 @@
 package com.fixparser;
 
+/**
+ * @author Ram
+ *
+ * @param <T>
+ * 
+ * Abstract Field type. I created just IntegerField/StringField for demonstration. It can be extended for various data types.
+ */
 public abstract class Field<T> {
 	
 	private int tag;

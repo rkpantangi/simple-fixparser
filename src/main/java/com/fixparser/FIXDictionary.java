@@ -3,6 +3,12 @@ package com.fixparser;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @author Ram
+ * 
+ * Contains the dictionary - Valid Tags/Groups/data types etc.
+ *
+ */
 public class FIXDictionary {
 	public static enum TagType {
 		UNKNOWN, SINGLE, GROUP

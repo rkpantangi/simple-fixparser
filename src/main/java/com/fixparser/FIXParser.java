@@ -10,6 +10,8 @@ import com.fixparser.FIXDictionary.TagType;
 /**
  * @author Ram
  *
+ * This does the parsing logic. It is not meant to be reused. It can be improved to reset the state for reuse. But I didn't do it for now.
+ * 
  */
 public class FIXParser {
 	public static final char FIX_DELIMITER = '|';

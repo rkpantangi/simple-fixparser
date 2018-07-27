@@ -7,6 +7,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+/**
+ * @author Ram
+ * 
+ * Represents the FIX Message container
+ *
+ */
 public class FIXMessage {
 
 	Map<Integer, Field<?>> fields = new LinkedHashMap<>();
