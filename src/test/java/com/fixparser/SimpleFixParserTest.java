@@ -142,7 +142,7 @@ public class SimpleFixParserTest {
 	}
 
 	@Test(expected=InvalidMessageException.class)
-	public void h_testIncorrectNumberOfRepeatingGroups2() throws InvalidMessageException {
+	public void k_testIncorrectNumberOfRepeatingGroups2() throws InvalidMessageException {
 		try {
 			fixParser.parseFIXMessage(
 					"8=345|9=12|55=IBM|40=P|269=1|277=12|456=7|283=5|123=3|786=23|398=34|567=11|44=12");
@@ -153,7 +153,7 @@ public class SimpleFixParserTest {
 	}
 
 	@Test(expected=InvalidMessageException.class)
-	public void i_testInvalidDataTypeOfATag() throws InvalidMessageException {
+	public void l_testInvalidDataTypeOfATag() throws InvalidMessageException {
 		try {
 			fixParser.parseFIXMessage(
 					"8=345|9=12|55=IBM|40=P|269=1|277=12|283=5|456=ABC|44=12");
