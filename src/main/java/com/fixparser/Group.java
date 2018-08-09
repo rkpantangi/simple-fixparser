@@ -1,6 +1,8 @@
 package com.fixparser;
 
+import java.util.Collections;
 import java.util.LinkedHashMap;
+import java.util.Set;
 
 public class Group {
 	private GroupInfo groupInfo;
@@ -24,6 +26,14 @@ public class Group {
 		return fields.containsKey(tag);
 	}
 
+	public Field<?> getField(int tag) {
+		return fields.get(tag);
+	}
+
+	public Set<Integer> getGroupMemberTags() {
+		return Collections.unmodifiableSet(fields.keySet());
+	}
+	
 	@Override
 	public String toString() {
 		return "Group [groupIdentifier - " + groupInfo.getGroupIdentifier() + ", fields=" + fields.values() + "]";
